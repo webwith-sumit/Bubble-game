@@ -5,7 +5,7 @@ var panelbtm = document.querySelector(".panelbottom")
 
 function createbubble() {
     var clutter = " ";
-    for (var i = 1; i <= 192; i++) {
+    for (var i = 1; i <= 198; i++) {
         var rn = Math.floor(Math.random() * 10)
         clutter += `<div class="bubble">${rn}</div>`;
     }
@@ -14,7 +14,7 @@ function createbubble() {
     panelbtm.style.gap = "0px";
 }
 function runtimer() {
-    timer = 2;
+    timer = 60;
     document.querySelector("#timer").textContent = 60;
     document.querySelector("#incscore").textContent = 0;
     var runtime = setInterval(function () {
